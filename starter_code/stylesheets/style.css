@@ -8,3 +8,35 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+/* ////////////////////////////header */
+
+
+
+
+
+/* ///////////////////////////////footer */
+#footer{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border-top:1px solid #454245;
+}
+#footer ul{
+    list-style-type: none;
+}
+#footer .items{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#footer .items:hover {
+    color: #454245;
+}
+#footer .social-media {
+    display: flex;
+    justify-content: space-between;
+}
+#footer small{
+    text-align: center;
+    color: #454245;
+}
