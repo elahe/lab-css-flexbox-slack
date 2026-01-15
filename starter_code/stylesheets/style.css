@@ -40,6 +40,31 @@ p {
   box-sizing: border-box;
 }
 
+
+/* ////////////////////////////////////welcome */
+#welcome {
+    padding: 20px 10px;
+    color: white;
+    text-align: center;
+    background-color: #540B51;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+#welcome .button{
+    padding: 10px;
+    color:#540B51 ;
+    background-color: #fff;
+    border: none;
+}
+#welcome > .button {
+    margin-bottom: 10px;
+}
+#welcome .button:hover {
+    background-color: #540B51;
+    color: #fff;
+}
+
 /* ////////////////////////////////companies */
 
 #companies {
