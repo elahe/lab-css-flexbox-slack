@@ -8,6 +8,27 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+/* //////////////////////////// navbar */
+
+#navbar {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #540B51;
+    color: white;
+}
+#navbar ul {
+    display: none;
+}
+#nav-btn button{
+    background-color: transparent;
+    border: none;
+}
+
+
+
+
+
 /* ////////////////////////////header */
 
 html, body {
@@ -55,6 +76,7 @@ p {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-bottom: 50px;
 }
 #header .button{
     position: relative;
@@ -73,6 +95,9 @@ p {
 .button-box .button:nth-last-child(1){
     background-color: #4285F4;
 }
+#header .image-header img {
+    width: 27rem;
+}
 
 
 /* /////////////////////////// collab */
@@ -89,6 +114,8 @@ p {
 #collab ul{
     list-style-type: none;
     padding: 0;
+    width: 50%;
+    margin: auto;
 }
 #collab ul li {
     font-weight: 700;
