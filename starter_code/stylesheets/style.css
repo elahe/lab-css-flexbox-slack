@@ -10,6 +10,9 @@ footer links grey: #454245
 */
 /* ////////////////////////////header */
 
+html, body {
+  overflow-x: hidden;
+}
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
@@ -39,6 +42,63 @@ p {
 *, *::before, *::after {
   box-sizing: border-box;
 }
+/* /////////////////////////// header */
+#header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    background-color:#540B51;
+    padding: 20px 20px 0;
+}
+#header .button-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#header .button{
+    position: relative;
+
+
+}
+#header .button img {
+    width: 35px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    background: #fff;
+    padding: 7px;
+    border-radius: 2px;
+}
+.button-box .button:nth-last-child(1){
+    background-color: #4285F4;
+}
+
+
+/* /////////////////////////// collab */
+
+#collab {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+}
+#collab h3 {
+    color: #540B51;
+}
+#collab ul{
+    list-style-type: none;
+    padding: 0;
+}
+#collab ul li {
+    font-weight: 700;
+}
+#collab span{
+    /* font-weight: 700; */
+    font-size: 35px;
+    color: #540B51;
+}
+
 
 
 /* ////////////////////////////////////welcome */
@@ -51,16 +111,18 @@ p {
     flex-direction: column;
     justify-content: stretch;
 }
-#welcome .button{
-    padding: 10px;
+.button{
+    font-size: 1em;
+    padding: 15px;
     color:#540B51 ;
     background-color: #fff;
     border: none;
+    border-radius: 2px;
 }
 #welcome > .button {
     margin-bottom: 10px;
 }
-#welcome .button:hover {
+ .button:hover {
     background-color: #540B51;
     color: #fff;
 }
@@ -84,13 +146,16 @@ p {
 }
 #companies .logos img {
     height: 39px;
+    max-width: 100%;
 }
 
 /* ///////////////////////////////footer */
+
 #footer{
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: 10px 0;
+    padding: 0 10px;
     border-top:1px solid #454245;
 }
 #footer ul{
